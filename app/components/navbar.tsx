@@ -11,18 +11,24 @@ export function Navbar() {
   const Spark = brandStatement.sparkIcon;
 
   return (
-    <header className="sticky top-0 z-50 px-3 pt-3 md:px-6 md:pt-5">
-      <nav className="container-shell neo-panel-soft px-5 py-4 backdrop-blur-xl md:px-6" aria-label="Primary navigation">
+    <motion.header
+      initial={{ opacity: 0, y: -18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+      className="sticky top-0 z-50 px-3 pt-3 md:px-6 md:pt-5"
+    >
+      <nav className="container-shell neo-panel-soft shine-border px-5 py-4 backdrop-blur-xl md:px-6" aria-label="Primary navigation">
         <div className="flex items-center justify-between gap-4">
-          <Link href="#top" className="flex items-center gap-3" aria-label="LumenForge Studio home">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(180deg,#E0B382,#D4A574)] text-white shadow-[var(--shadow-raised)]">
+          <Link href="#top" className="flex items-center gap-3" aria-label="RP Studio home">
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(160deg,#F2CA8C,#C98E54)] text-[#0E0A04] shadow-[var(--shadow-raised)]">
               <Spark className="h-5 w-5" />
             </span>
             <span>
               <span className="heading-font block text-lg font-bold text-[var(--foreground)]">
                 {brandStatement.name}
               </span>
-              <span className="block text-sm text-[var(--muted)]">{brandStatement.tagline}</span>
+              {/* <span className="text-[var(--accent-strong)]"></span> */}
+              <span className="block text-sm text-[var(--accent-strong)]">{brandStatement.tagline}</span>
             </span>
           </Link>
 
@@ -57,9 +63,9 @@ export function Navbar() {
         <AnimatePresence>
           {isOpen ? (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0, height: 0, y: -8 }}
+              animate={{ opacity: 1, height: "auto", y: 0 }}
+              exit={{ opacity: 0, height: 0, y: -8 }}
               className="overflow-hidden md:hidden"
             >
               <div className="mt-4 flex flex-col gap-3 border-t border-[var(--border-soft)] pt-4">
@@ -81,6 +87,6 @@ export function Navbar() {
           ) : null}
         </AnimatePresence>
       </nav>
-    </header>
+    </motion.header>
   );
 }

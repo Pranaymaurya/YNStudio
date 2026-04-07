@@ -32,17 +32,18 @@ export function Testimonials() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="neo-panel overflow-hidden p-6 md:p-8">
+          <div className="neo-panel shine-border relative overflow-hidden p-6 md:p-8">
+            <div className="ambient-orb absolute right-[-3rem] top-[-3rem] h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(108,88,210,0.22),transparent_66%)] blur-3xl" />
             <AnimatePresence mode="wait">
               <motion.article
                 key={testimonial.name}
-                initial={{ opacity: 0, y: 22 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -18 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
+                initial={{ opacity: 0, y: 22, filter: "blur(8px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -18, filter: "blur(8px)" }}
+                transition={{ duration: 0.45, ease: "easeOut" }}
               >
                 <div className="flex items-start justify-between gap-5">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-[18px] bg-[linear-gradient(180deg,#FFF7EE,#F2E7D8)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-[18px] bg-[linear-gradient(180deg,#1E1630,#0C0A18)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
                     <QuoteIcon className="h-6 w-6" />
                   </span>
                   <div className="neo-inset flex gap-2 p-2">
@@ -72,6 +73,15 @@ export function Testimonials() {
                 <div className="mt-8">
                   <p className="text-lg font-semibold text-[var(--foreground)]">{testimonial.name}</p>
                   <p className="mt-1 text-sm uppercase tracking-[0.16em] text-[var(--muted)]">{testimonial.role}</p>
+                </div>
+                <div className="mt-8 h-1.5 rounded-full bg-[rgba(255,255,255,0.06)]">
+                  <motion.div
+                    key={`${testimonial.name}-progress`}
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 4.7, ease: "linear" }}
+                    className="h-full rounded-full bg-[linear-gradient(90deg,var(--accent),var(--accent-strong))]"
+                  />
                 </div>
               </motion.article>
             </AnimatePresence>

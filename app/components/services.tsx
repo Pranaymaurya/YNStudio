@@ -22,8 +22,8 @@ export function Services() {
 
             return (
               <Reveal key={service.title} delay={index * 0.08}>
-                <article className="neo-panel h-full p-6 md:p-7">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-[linear-gradient(180deg,#FFF7EE,#F2E7D8)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
+                <article className="neo-panel shine-border h-full p-6 md:p-7">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-[linear-gradient(180deg,#1E1630,#0C0A18)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 id={index === 0 ? "services-heading" : undefined} className="mt-6 text-2xl text-[var(--foreground)]">

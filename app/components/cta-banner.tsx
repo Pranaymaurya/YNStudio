@@ -6,7 +6,7 @@ export function CtaBanner() {
   return (
     <section className="px-3 py-6 md:px-6 md:py-10" aria-labelledby="cta-heading">
       <Reveal>
-        <div className="container-shell neo-panel overflow-hidden px-6 py-10 text-center md:px-10 md:py-14">
+        <div className="container-shell neo-panel shine-border overflow-hidden px-6 py-10 text-center md:px-10 md:py-14">
           <div className="mx-auto max-w-3xl">
             <span className="eyebrow">Ready to build</span>
             <h2 id="cta-heading" className="mt-6 text-3xl leading-tight text-[var(--foreground)] md:text-5xl">

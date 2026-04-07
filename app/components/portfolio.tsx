@@ -32,7 +32,7 @@ export function Portfolio() {
                   <button
                     key={filter}
                     type="button"
-                    className={isActive ? "neo-button !px-4 !py-3 !text-sm" : "rounded-2xl px-4 py-3 text-sm font-medium text-[var(--muted)]"}
+                    className={isActive ? "neo-button !px-4 !py-3 !text-sm" : "rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-[var(--muted)] hover:border-[var(--border-soft)] hover:text-[var(--foreground)]"}
                     aria-pressed={isActive}
                     onClick={() => setActiveFilter(filter)}
                   >
@@ -53,24 +53,25 @@ export function Portfolio() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
+                whileHover={{ y: -10 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="neo-panel overflow-hidden p-5 md:p-6"
+                className="neo-panel shine-border group overflow-hidden p-5 md:p-6"
               >
-                <div className={`rounded-[22px] bg-gradient-to-br ${item.gradient} p-5 shadow-[var(--shadow-inset)]`}>
+                <div className={`rounded-[22px] bg-linear-to-br ${item.gradient} p-5 shadow-[var(--shadow-inset)]`}>
                   <div className="flex items-center justify-between gap-4">
-                    <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
+                    <span className="rounded-full bg-[rgba(10,13,18,0.62)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
                       {item.category}
                     </span>
                     <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--foreground)]">
                       Live case
                     </span>
                   </div>
-                  <div className="mt-12 rounded-[18px] bg-white/78 p-4 shadow-[var(--shadow-raised)]">
+                  <div className="mt-12 rounded-[18px] bg-[rgba(13,17,22,0.78)] p-4 shadow-[var(--shadow-raised)]">
                     <div className="h-2 w-16 rounded-full bg-[rgba(212,165,116,0.7)]" />
-                    <div className="mt-3 h-2 w-24 rounded-full bg-[rgba(44,44,44,0.16)]" />
+                    <div className="mt-3 h-2 w-24 rounded-full bg-[rgba(255,255,255,0.18)]" />
                     <div className="mt-6 grid grid-cols-3 gap-3">
-                      <div className="h-20 rounded-2xl bg-white/85" />
-                      <div className="col-span-2 h-20 rounded-2xl bg-white/70" />
+                      <div className="h-20 rounded-2xl bg-[rgba(255,255,255,0.1)]" />
+                      <div className="col-span-2 h-20 rounded-2xl bg-[rgba(255,255,255,0.16)]" />
                     </div>
                   </div>
                 </div>
@@ -84,7 +85,7 @@ export function Portfolio() {
                       {item.results}
                     </p>
                   </div>
-                  <span className="neo-inset flex h-12 w-12 items-center justify-center text-[var(--foreground)]">
+                  <span className="neo-inset flex h-12 w-12 items-center justify-center text-[var(--foreground)] transition-transform duration-200 group-hover:translate-x-1">
                     <ArrowRightIcon className="h-4 w-4" />
                   </span>
                 </div>

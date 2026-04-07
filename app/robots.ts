@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://lumenforge.studio";
+const siteUrl = "https://RP.studio";
 
 export default function robots(): MetadataRoute.Robots {
   return {

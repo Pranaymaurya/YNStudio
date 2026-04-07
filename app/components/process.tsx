@@ -17,7 +17,7 @@ export function Process() {
         <div className="grid gap-6 xl:grid-cols-4">
           {processSteps.map((step, index) => (
             <Reveal key={step.step} delay={index * 0.08}>
-              <article className="relative h-full rounded-[28px] border border-[var(--border-soft)] px-5 pb-6 pt-8 md:px-6">
+              <article className="shine-border relative h-full rounded-[28px] border border-[var(--border-soft)] bg-[linear-gradient(160deg,rgba(18,24,38,0.9),rgba(8,10,18,0.88))] px-5 pb-6 pt-8 md:px-6">
                 <div className="absolute left-6 top-0 hidden h-px w-[calc(100%-3rem)] bg-[linear-gradient(90deg,rgba(212,165,116,0.7),rgba(212,165,116,0.08))] xl:block" />
                 <div className="neo-inset flex h-16 w-16 items-center justify-center rounded-full text-lg font-bold text-[var(--accent-strong)]">
                   {step.step}

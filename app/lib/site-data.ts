@@ -54,7 +54,7 @@ export const services: {
 export const stats = [
   { value: 50, suffix: "+", label: "Projects launched" },
   { value: 30, suffix: "+", label: "Long-term clients" },
-  { value: 92, suffix: "%", label: "Average retention rate" },
+  { value: 92, suffix: "%", label: "Average retention" },
   { value: 14, suffix: "d", label: "Fastest MVP delivery" },
 ];
 
@@ -66,42 +66,42 @@ export const portfolioItems = [
     category: "Social",
     summary: "Campaign-led social media management that lifted engagement and lead quality across three markets.",
     results: "3.8x engagement growth",
-    gradient: "from-[#F1DEC8] via-[#FFF7EE] to-[#F0EFE9]",
+    gradient: "from-[#1D1026] via-[#0D0E1C] to-[#0A0B14]",
   },
   {
     title: "Aster Studio",
     category: "Web",
     summary: "A premium portfolio website for a design consultancy with a streamlined inquiry flow and SEO-ready structure.",
     results: "41% more qualified inbound leads",
-    gradient: "from-[#F7F1EA] via-[#FFFFFF] to-[#E9E4DB]",
+    gradient: "from-[#0E1730] via-[#0A0D1E] to-[#1A1226]",
   },
   {
     title: "PulseOps Cloud",
     category: "SaaS",
     summary: "An operations SaaS interface with role-based dashboards, usage tracking, and subscription workflows.",
     results: "Beta launched in 6 weeks",
-    gradient: "from-[#EDE5DA] via-[#FFFDFC] to-[#F4EEE7]",
+    gradient: "from-[#0D1426] via-[#09101E] to-[#131B32]",
   },
   {
     title: "Maison Kira",
     category: "Social",
     summary: "Content production and social channel planning for a luxury retail label entering a new region.",
     results: "2.1x follower conversion rate",
-    gradient: "from-[#FFF9F1] via-[#F3E6D6] to-[#FFFFFF]",
+    gradient: "from-[#1E0E28] via-[#0E0C1A] to-[#0A0B14]",
   },
   {
     title: "Terra Metrics",
     category: "Web",
     summary: "A conversion-first website for a climate tech startup built with modular storytelling and strong technical clarity.",
     results: "28% lower bounce rate",
-    gradient: "from-[#EEE7DE] via-[#FFFFFF] to-[#F8F4EF]",
+    gradient: "from-[#0A1626] via-[#090D1B] to-[#122030]",
   },
   {
     title: "Dockflow CRM",
     category: "SaaS",
     summary: "Product design and front-end delivery for a lightweight CRM that reduced friction across onboarding and reporting.",
     results: "53% activation lift",
-    gradient: "from-[#F3EADC] via-[#FFFFFF] to-[#ECE7DF]",
+    gradient: "from-[#14162A] via-[#0C0D1C] to-[#1A1230]",
   },
 ];
 
@@ -131,7 +131,7 @@ export const processSteps = [
 export const testimonials = [
   {
     quote:
-      "LumenForge gave us a sharper digital presence and a calmer operating rhythm. They think like owners, not vendors.",
+      "RP gave us a sharper digital presence and a calmer operating rhythm. They think like owners, not vendors.",
     name: "Ariana Blake",
     role: "Founder, Northstar Wellness",
   },
@@ -183,7 +183,7 @@ export const socialLinks: { label: string; href: string; icon: IconType }[] = [
 ];
 
 export const contactDetails: { label: string; value: string; href: string; icon: IconType }[] = [
-  { label: "Email", value: "hello@lumenforge.studio", href: "mailto:hello@lumenforge.studio", icon: MailIcon },
+  { label: "Email", value: "hello@RP.studio", href: "mailto:hello@RP.studio", icon: MailIcon },
   { label: "Phone", value: "+1 (415) 555-0148", href: "tel:+14155550148", icon: PhoneIcon },
   { label: "Location", value: "Working worldwide from Dubai and London", href: "#contact", icon: MapPinIcon },
 ];
@@ -197,7 +197,7 @@ export const highlights = [
 export const heroBadges = ["Social growth systems", "Premium digital products", "Lean SaaS execution"];
 
 export const brandStatement = {
-  name: "LumenForge Studio",
+  name: "RP Studio",
   tagline: "Digital growth, built with clarity.",
   description:
     "A boutique agency for founders and modern brands that need sharp execution across content, product, and revenue systems.",

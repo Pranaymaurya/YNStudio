@@ -6,11 +6,11 @@ export function Footer() {
 
   return (
     <footer className="px-3 pb-6 pt-8 md:px-6 md:pb-8" aria-label="Footer">
-      <div className="container-shell neo-panel-soft p-6 md:p-8">
+      <div className="container-shell neo-panel-soft shine-border p-6 md:p-8">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.6fr_0.8fr_0.55fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(180deg,#E0B382,#D4A574)] text-white shadow-[var(--shadow-raised)]">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(160deg,#F2CA8C,#C98E54)] text-[#0E0A04] shadow-[var(--shadow-raised)]">
                 <Spark className="h-5 w-5" />
               </span>
               <div>
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-[var(--border-soft)] pt-5 text-sm text-[var(--muted)]">
-          © 2026 LumenForge Studio. All rights reserved.
+          © 2026 RP Studio. All rights reserved.
         </div>
       </div>
     </footer>

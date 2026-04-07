@@ -21,8 +21,8 @@ export function Contact() {
                 const Icon = item.icon;
 
                 return (
-                  <a key={item.label} href={item.href} className="neo-panel flex items-center gap-4 p-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-[linear-gradient(180deg,#FFF7EE,#F2E7D8)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
+                  <a key={item.label} href={item.href} className="neo-panel shine-border flex items-center gap-4 p-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-[linear-gradient(180deg,#1E1630,#0C0A18)] text-[var(--accent-strong)] shadow-[var(--shadow-inset)]">
                       <Icon className="h-5 w-5" />
                     </span>
                     <span>
@@ -56,7 +56,7 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="neo-panel p-6 md:p-8">
+          <div className="neo-panel shine-border p-6 md:p-8">
             <h2 id="contact-heading" className="text-2xl text-[var(--foreground)] md:text-3xl">
               Start the conversation
             </h2>
@@ -119,13 +119,13 @@ export function Contact() {
               </div>
             </form>
 
-            <div className="mt-8 rounded-[20px] border border-[var(--border-soft)] bg-[linear-gradient(135deg,#FFF9F1,#F5EEE4)] p-5">
+            <div className="mt-8 rounded-[20px] border border-[var(--border-soft)] bg-[linear-gradient(135deg,rgba(30,22,48,0.72),rgba(9,10,20,0.97))] p-5">
               <p className="text-sm uppercase tracking-[0.16em] text-[var(--accent-strong)]">Prefer email?</p>
               <p className="mt-2 text-base leading-8 text-[var(--muted)]">
                 Send a short brief directly and we&apos;ll reply with scope guidance, timeline expectations, and the right engagement model.
               </p>
-              <Link href="mailto:hello@lumenforge.studio" className="mt-4 inline-flex text-base font-semibold text-[var(--foreground)]">
-                hello@lumenforge.studio
+              <Link href="mailto:hello@RP.studio" className="mt-4 inline-flex text-base font-semibold text-[var(--foreground)]">
+                hello@RP.studio
               </Link>
             </div>
           </div>

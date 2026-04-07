@@ -27,12 +27,12 @@ export function Stats() {
       <div className="container-shell grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {stats.map((stat, index) => (
           <Reveal key={stat.label} delay={index * 0.08}>
-            <div className="neo-panel p-6 text-center md:p-7">
+            <motion.div whileHover={{ y: -8, scale: 1.01 }} className="neo-panel shine-border p-6 text-center md:p-7">
               <p className="text-4xl text-[var(--foreground)] md:text-5xl">
                 <StatNumber value={stat.value} suffix={stat.suffix} />
               </p>
               <p className="mt-3 text-sm uppercase tracking-[0.16em] text-[var(--muted)]">{stat.label}</p>
-            </div>
+            </motion.div>
           </Reveal>
         ))}
       </div>
