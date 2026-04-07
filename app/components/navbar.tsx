@@ -20,9 +20,9 @@ export function Navbar() {
       <nav className="container-shell neo-panel-soft shine-border px-5 py-4 backdrop-blur-xl md:px-6" aria-label="Primary navigation">
         <div className="flex items-center justify-between gap-4">
           <Link href="#top" className="flex items-center gap-3" aria-label="RP Studio home">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(160deg,#F2CA8C,#C98E54)] text-[#0E0A04] shadow-[var(--shadow-raised)]">
+           
               <Spark className="h-5 w-5" />
-            </span>
+            
             <span>
               <span className="heading-font block text-lg font-bold text-[var(--foreground)]">
                 {brandStatement.name}
