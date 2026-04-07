@@ -18,7 +18,7 @@ export function Team() {
           {team.map((member, index) => (
             <Reveal key={member.name} delay={index * 0.08}>
               <article className="neo-panel shine-border h-full p-6 md:p-7">
-                <div className="flex h-20 w-20 items-center justify-center rounded-[24px] bg-[linear-gradient(160deg,#E03A3A,#C98E54)] text-2xl font-bold text-[#0E0A04] shadow-[var(--shadow-raised)]">
+                <div className="flex h-20 w-20 items-center justify-center rounded-[24px] bg-[linear-gradient(160deg,#2563EB,#C98E54)] text-2xl font-bold text-[#0E0A04] shadow-[var(--shadow-raised)]">
                   {member.initials}
                 </div>
                 <h3 id={index === 0 ? "team-heading" : undefined} className="mt-6 text-2xl text-[var(--foreground)]">
