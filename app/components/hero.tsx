@@ -18,13 +18,13 @@ export function Hero() {
           <div className="ambient-orb absolute right-[-4rem] top-[-3rem] h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(108,88,210,0.2),transparent_65%)] blur-3xl" />
           <div className="ambient-orb-delayed absolute bottom-[-6rem] left-[-2rem] h-44 w-44 rounded-full bg-[radial-gradient(circle,rgba(212,165,116,0.18),transparent_64%)] blur-3xl" />
           <motion.span initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08, duration: 0.55, ease: "easeOut" }} className="eyebrow">
-            Boutique Digital Agency
+             Digital Agency
           </motion.span>
           <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.16, duration: 0.55, ease: "easeOut" }} className="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-[var(--accent-strong)]">
             Social management, web products, and SaaS systems
           </motion.p>
           <motion.h1 id="hero-heading" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.24, duration: 0.6, ease: "easeOut" }} className="mt-5 max-w-3xl text-4xl leading-tight text-[var(--foreground)] md:text-6xl uppercase">
-            We build <span className="text-[var(--accent-strong)]">dark, high-clarity</span> digital experiences that turn attention into growth.
+           We <span className="text-[var(--accent-strong)]"> design, build, and scale digital products</span> that grow businesses.
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.32, duration: 0.6, ease: "easeOut" }} className="mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] md:text-lg">
             {brandStatement.description} We partner with founders, consultants, and service businesses that need calm execution and measurable outcomes.
@@ -32,7 +32,7 @@ export function Hero() {
 
           <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }} className="mt-8 flex flex-col gap-4 sm:flex-row">
             <motion.div whileHover={{ y: -4 }} whileTap={{ scale: 0.98 }}>
-              <Link href="#contact" className="neo-button" aria-label="Start a project with RP Studio">
+              <Link href="#contact" className="neo-button" aria-label="Start a project with A2Z Agency">
                 Start a Project
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
@@ -45,7 +45,7 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.48, duration: 0.6, ease: "easeOut" }} className="mt-10 flex flex-wrap gap-3">
+          {/* <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.48, duration: 0.6, ease: "easeOut" }} className="mt-10 flex flex-wrap gap-3">
             {heroBadges.map((badge) => (
               <motion.span
                 key={badge}
@@ -75,7 +75,7 @@ export function Hero() {
               <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">Engagement</p>
               <p className="mt-2 text-lg text-[var(--foreground)]">Retainers, builds, and MVP sprints</p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         <motion.div
@@ -96,7 +96,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          <motion.div className="neo-panel overflow-hidden p-6 md:p-8" whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
+          {/* <motion.div className="neo-panel overflow-hidden p-6 md:p-8" whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
             <div className="rounded-[22px] bg-[linear-gradient(135deg,#141A2E_0%,#09090F_42%,#271D12_100%)] p-6 shadow-[var(--shadow-inset)]">
               <div className="flex items-start justify-between gap-4">
                 <div>
@@ -116,7 +116,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

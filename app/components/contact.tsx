@@ -124,8 +124,8 @@ export function Contact() {
               <p className="mt-2 text-base leading-8 text-[var(--muted)]">
                 Send a short brief directly and we&apos;ll reply with scope guidance, timeline expectations, and the right engagement model.
               </p>
-              <Link href="mailto:hello@RP.studio" className="mt-4 inline-flex text-base font-semibold text-[var(--foreground)]">
-                hello@RP.studio
+              <Link href="mailto:hello@A2Z Agency" className="mt-4 inline-flex text-base font-semibold text-[var(--foreground)]">
+                hello@A2Z Agency
               </Link>
             </div>
           </div>

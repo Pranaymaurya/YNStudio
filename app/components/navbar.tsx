@@ -19,7 +19,7 @@ export function Navbar() {
     >
       <nav className="container-shell neo-panel-soft shine-border px-5 py-4 backdrop-blur-xl md:px-6" aria-label="Primary navigation">
         <div className="flex items-center justify-between gap-4">
-          <Link href="#top" className="flex items-center gap-3" aria-label="RP Studio home">
+          <Link href="#top" className="flex items-center gap-3" aria-label="A2Z Agency home">
            
               <Spark className="h-5 w-5" />
             

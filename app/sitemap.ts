@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://RP.studio";
+const siteUrl = "https://A2Z Agency";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

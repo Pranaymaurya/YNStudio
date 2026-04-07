@@ -14,16 +14,16 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://RP.studio";
+const siteUrl = "https://A2ZAgency";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "RP Studio | Digital Agency for Social, Web, and SaaS",
-    template: "%s | RP Studio",
+    default: "A2Z Agency | Digital Agency for Social, Web, and SaaS",
+    template: "%s | A2Z Agency",
   },
   description:
-    "RP Studio builds growth systems for modern brands through social media management, web and app development, and SaaS product delivery.",
+    "A2Z Agency builds growth systems for modern brands through social media management, web and app development, and SaaS product delivery.",
   keywords: [
     "digital agency",
     "social media management",
@@ -33,17 +33,17 @@ export const metadata: Metadata = {
     "freelancer portfolio",
   ],
   openGraph: {
-    title: "RP Studio",
+    title: "A2Z Agency",
     description:
       "A conversion-focused digital agency delivering social strategy, premium websites, apps, and SaaS systems.",
     url: siteUrl,
-    siteName: "RP Studio",
+    siteName: "A2Z Agency",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RP Studio",
+    title: "A2Z Agency",
     description:
       "Social media management, app and web development, and SaaS solutions for ambitious brands.",
   },

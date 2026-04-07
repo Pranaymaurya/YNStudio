@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-[var(--border-soft)] pt-5 text-sm text-[var(--muted)]">
-          © 2026 RP Studio. All rights reserved.
+          © 2026 A2Z Agency. All rights reserved.
         </div>
       </div>
     </footer>

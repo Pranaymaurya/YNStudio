@@ -157,19 +157,19 @@ export const testimonials = [
 
 export const team = [
   {
-    name: "Maya Hart",
+    name: "Rahul Mahto",
     role: "Strategy & Social Lead",
     initials: "MH",
     bio: "Builds editorial systems, campaign calendars, and measurable growth plans for modern brands.",
   },
   {
-    name: "Julian Cross",
+    name: "Pranay Maurya",
     role: "Product Engineer",
     initials: "JC",
     bio: "Turns requirements into responsive web experiences, app flows, and scalable front-end systems.",
   },
   {
-    name: "Leena Shah",
+    name: "Parth Tayade",
     role: "SaaS Product Designer",
     initials: "LS",
     bio: "Designs SaaS journeys with clean interfaces, frictionless onboarding, and revenue-minded UX patterns.",
@@ -183,9 +183,9 @@ export const socialLinks: { label: string; href: string; icon: IconType }[] = [
 ];
 
 export const contactDetails: { label: string; value: string; href: string; icon: IconType }[] = [
-  { label: "Email", value: "hello@RP.studio", href: "mailto:hello@RP.studio", icon: MailIcon },
+  { label: "Email", value: "hello@a2zagency", href: "mailto:hello@a2zagency", icon: MailIcon },
   { label: "Phone", value: "+1 (415) 555-0148", href: "tel:+14155550148", icon: PhoneIcon },
-  { label: "Location", value: "Working worldwide from Dubai and London", href: "#contact", icon: MapPinIcon },
+  { label: "Location", value: "Working worldwide from India", href: "#contact", icon: MapPinIcon },
 ];
 
 export const highlights = [
@@ -197,7 +197,7 @@ export const highlights = [
 export const heroBadges = ["Social growth systems", "Premium digital products", "Lean SaaS execution"];
 
 export const brandStatement = {
-  name: "RP Studio",
+  name: "A2Z Agency",
   tagline: "Digital growth, built with clarity.",
   description:
     "A boutique agency for founders and modern brands that need sharp execution across content, product, and revenue systems.",
